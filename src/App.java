@@ -4,10 +4,9 @@ public class App {
 
         for (int num = 2; num <= 100; num++) {
             boolean esPrimo = true;
-            for (int i = 2; i <= Math.sqrt(num); i++) {
+            for (int i = 2; esPrimo && j <= i/2; i++) {
                 if (num % i == 0) {
                     esPrimo = false;
-                    break;
                 }
             }
             if (esPrimo) {
